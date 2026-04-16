@@ -19,13 +19,12 @@ article.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .card__image-container {
   width: 100%;
   aspect-ratio: 1 / 1;
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,15 +36,15 @@ article.card {
 }
 .card__image-container--orange {
   background-color: var(--color-secondary);
-   border-radius: 10px;
+  border-radius: 10px;
 }
 .card__image-container--white {
   background-color: var(--color-accent);
-   border-radius: 10px;
+  border-radius: 10px;
 }
 .card__image-container--blue {
   background-color: var(--color-primary);
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .card__button {
   background: linear-gradient(to bottom, var(--color-primary), #ab0033);
@@ -58,4 +57,52 @@ article.card {
   margin-top: 20px;
   width: 45%;
 }
+.banner {
+  background: linear-gradient(to right, #f1c40f, #e67e22);
+  padding: 60px 10%;
+  margin: 40px 0;
+}
 
+.banner__container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.banner__img {
+  width: 480px;
+  transition: transform 0.5s ease;
+  height: auto;
+}
+.banner__img:hover {
+  transform: rotate(-15deg);
+}
+
+.banner__title {
+  font-size: 80px;
+  line-height: 1;
+  h2 {
+    font-weight: 800;
+  }
+  span {
+    color: var(--color-white);
+  }
+}
+.banner__description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: var(--color-white);
+  font-family: var(--font-main);
+}
+.banner__button {
+  background: linear-gradient(to bottom, var(--color-primary), #ab0033);
+  color: var(--color-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 45%;
+}
