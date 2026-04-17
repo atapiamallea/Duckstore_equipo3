@@ -2,7 +2,6 @@
   padding: 80px 5%;
   text-align: center;
 }
-
 .categories__title {
   margin-bottom: 40px;
   font-family: var(--font-titles);
@@ -20,17 +19,14 @@ article.card {
   flex-direction: column;
   align-items: center;
 }
-
 .card__image-container {
   width: 100%;
   aspect-ratio: 1 / 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
 }
-
 .card__img {
   width: 80%;
 }
@@ -60,16 +56,13 @@ article.card {
 .banner {
   background: linear-gradient(to right, #f1c40f, #e67e22);
   padding: 60px 10%;
-  margin: 40px 0;
 }
-
 .banner__container {
   display: flex;
   align-items: center;
   gap: 50px;
   justify-content: center;
 }
-
 .banner__img {
   width: 480px;
   transition: transform 0.5s ease;
@@ -78,7 +71,6 @@ article.card {
 .banner__img:hover {
   transform: rotate(-15deg);
 }
-
 .banner__title {
   font-size: 80px;
   line-height: 1;
@@ -111,7 +103,6 @@ article.card {
     text-align: center;
     background-color: var(--color-background); 
 }
-
 .contact__container {
     max-width: 600px;
     margin: 0 auto;
@@ -120,7 +111,6 @@ article.card {
     align-items: center;
     gap: 20px;
 }
-
 .contact__icon-container {
     background-color: var(--color-secondary); 
     width: 60px;
@@ -129,26 +119,25 @@ article.card {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--color-black);
     margin-bottom: 10px;
+    box-shadow: 4px 4px var(--color-black);
 }
-
 .contact__icon {
     width: 30px;
 }
-
 .contact__title {
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 600;
     line-height: 1.2;
+    font-family: var(--font-titles);
+  
 }
-
 .contact__text {
     color: #666;
     font-size: 1.1rem;
 }
 .contact__button {
-  background: linear-gradient(to bottom, var(--color-primary), #ab0033);
+  background: linear-gradient(to bottom, var(--color-accent), #105a4b);
   color: var(--color-white);
   border: none;
   border-radius: 20px;
@@ -160,6 +149,6 @@ article.card {
 }
 .contact__disclaimer {
     margin-top: 20px;
-    font-size: 0.75rem;
+    font-size: 15px;
     color: #999; 
 }
