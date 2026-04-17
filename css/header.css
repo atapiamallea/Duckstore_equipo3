@@ -32,6 +32,10 @@
   color: var(--color-black);
   text-decoration: none;
   margin-right: 30px;
+  
+}
+.nav__item a:hover {
+  color: var(--color-primary);
 }
 section.hero {
   min-height: 600px;
