@@ -106,3 +106,60 @@ article.card {
   margin-top: 20px;
   width: 45%;
 }
+.contact {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: var(--color-background); 
+}
+
+.contact__container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact__icon-container {
+    background-color: var(--color-secondary); 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-black);
+    margin-bottom: 10px;
+}
+
+.contact__icon {
+    width: 30px;
+}
+
+.contact__title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.contact__text {
+    color: #666;
+    font-size: 1.1rem;
+}
+.contact__button {
+  background: linear-gradient(to bottom, var(--color-primary), #ab0033);
+  color: var(--color-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 45%;
+}
+.contact__disclaimer {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: #999; 
+}
