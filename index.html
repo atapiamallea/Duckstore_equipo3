@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DuckStore Equipo 3</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo-container">
@@ -16,7 +17,13 @@
                 </a>
             </div>
 
-            <ul class="header__nav-list">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="header__nav-list" id="nav-menu">
                 <li class="nav__item"><a href="#">Inicio</a></li>
                 <li class="nav__item"><a href="#">Catálogo</a></li>
                 <li class="nav__item"><a href="#">Contacto</a></li>
@@ -89,13 +96,10 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <img
-              class="footer__logo-img"
-              src="assets/logo.svg"
-              alt="DuckStore Logo"
-            />
-      <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
-    </div>
+            <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
+            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
