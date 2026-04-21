@@ -5,7 +5,11 @@
   .banner__img {
     width: 350px;
   }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 768px) {
   .header__nav {
     flex-direction: row;
@@ -66,18 +70,31 @@
     flex-direction: column;
     text-align: center;
     padding: 60px;
-
   }
   h2.banner__title {
     font-size: 70px;
-}
+  }
   .banner__img {
-   display: none;
+    display: none;
   }
   .banner__button,
   .card__button,
   .contact__button {
     width: 50%;
+  }
+  /* --PÁGINA CATÁLOGO  */
+  .catalog__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .catalog__sidebar {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 
@@ -90,5 +107,11 @@
   }
   section.hero {
     padding: 40px 20px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .catalog {
+    padding: 20px 10px;
   }
 }

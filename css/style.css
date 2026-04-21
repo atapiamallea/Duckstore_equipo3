@@ -1,10 +1,10 @@
 @import "./pages/home/header.css";
 @import "./pages/home/main.css";
 @import "./pages/home/footer.css";
-@import "./pages/home/medias.css";
 @import "./pages/catalog/catalog-header.css";
 @import "./pages/catalog/catalog-main.css";
 @import "./pages/catalog/catalog-footer.css";
+@import "./medias.css";
 
 
 /* Fonts */
