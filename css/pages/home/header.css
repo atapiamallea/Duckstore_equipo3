@@ -84,6 +84,10 @@ section.hero {
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.hero__button:hover {
+  transform: scale(1.1);
 }
 .card__hero {
   width: auto;

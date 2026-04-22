@@ -42,16 +42,19 @@ article.card {
   background-color: var(--color-primary);
   border-radius: 10px;
 }
-.card__button {
+a .card__button {
   background: linear-gradient(to bottom, var(--color-primary), #ab0033);
   color: var(--color-white);
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 20px;
   cursor: pointer;
   margin-top: 20px;
-  width: 45%;
+  transition: transform 0.3s ease;
+}
+.card__button:hover {
+  transform: scale(1.1);
 }
 .banner {
   background: linear-gradient(to right, #f1c40f, #e67e22);
@@ -92,11 +95,14 @@ article.card {
   color: var(--color-white);
   border: none;
   border-radius: 20px;
-  padding: 10px 10px;
+  padding: 10px 35px;
   font-size: 20px;
   cursor: pointer;
   margin-top: 20px;
-  width: 45%;
+  transition: transform 0.3s ease;
+}
+.banner__button:hover {
+  transform: scale(1.1);
 }
 .contact {
     padding: 80px 5%;
@@ -122,7 +128,7 @@ article.card {
     margin-bottom: 10px;
     box-shadow: 4px 4px var(--color-black);
 }
-.contact__icon {
+.contact__icon-home {
     width: 30px;
 }
 .contact__title {
@@ -136,16 +142,20 @@ article.card {
     color: #666;
     font-size: 1.1rem;
 }
-.contact__button {
+.contact__button-home {
   background: linear-gradient(to bottom, var(--color-accent), #105a4b);
   color: var(--color-white);
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 25px;
+  padding: 14px 30px;
   font-size: 20px;
   cursor: pointer;
   margin-top: 20px;
-  width: 45%;
+  transition: transform 0.3s ease;
+  
+}
+.contact__button-home:hover {
+  transform: scale(1.1);
 }
 .contact__disclaimer {
     margin-top: 20px;

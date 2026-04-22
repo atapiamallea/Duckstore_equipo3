@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina detalle</title>
-     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 
 <body>
-      <header class="header">
+    <header class="header">
         <nav class="header__nav">
             <div class="header__logo-container">
                 <a href="index.html" class="header__logo">
@@ -17,35 +18,46 @@
                 </a>
             </div>
 
-            <ul class="header__nav-list">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="header__nav-list" id="nav-menu">
                 <li class="nav__item"><a href="./index.html">Inicio</a></li>
-                <li class="nav__item"><a href="#">Catálogo</a></li>
-                <li class="nav__item"><a href="#">Contacto</a></li>
+                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
+    </header>
     <article class="detail__container">
-            <div class="detail__img-container">
-         <img class="detail__img" src="./assets/sevillana.png" alt="Detalle del producto">
+        <div class="detail__img-container">
+            <img class="detail__img" src="./assets/sevillana.png" alt="Detalle del producto">
         </div>
 
         <div class="product__details">
-    <h1 class="product__title">Patito flamenca</h1>
-     <div class="product__description">
-      <h3>Descripcion producto</h3>
-      <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-    </div>
-     <div class="product__price">26,99 €</div>
- <div class="product__quantity-text">CANTIDAD</div>
-    <div class="action__row">
-      <div class="quantity__selector">
-        <button>-</button>
-        <span>2</span>
-        <button>+</button>
-      </div>
-      
-      <button class="shop__button">Añadir al carrito</button>
-</article>
-  </section>
+            <h1 class="product__title">Patito flamenca</h1>
+            <div class="product__description">
+                <h3 class="product__subtitle">Descripción producto</h3>
+                <p>Añade un toque de cultura y color a tu colección con esta pieza exclusiva de DuckStore</p><br>
+                <p><strong>Material:</strong> Vinilo de alta calidad, resistente al agua y duradero.<br>
+                    <strong>Diseño:</strong> Estética original con elementos icónicos (abanico, peineta y castañuelas).<br>
+                    <strong>Dimensiones:</strong> Tamaño estándar para coleccionistas, ideal para exhibir.</p>
+            </div>
+            <div class="product__price">26,99 €</div>
+            <div class="product__quantity-text">CANTIDAD</div>
+            <div class="action__row">
+                <div class="quantity__selector">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+
+                <button class="shop__button">Añadir al carrito</button>
+    </article>
+    </section>
 
 </body>
+
 </html>
