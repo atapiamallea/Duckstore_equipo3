@@ -1,6 +1,18 @@
-@import "header.css";
-@import "main.css";
-@import "footer.css";
+@import "./pages/home/header.css";
+@import "./pages/home/main.css";
+@import "./pages/home/footer.css";
+@import "./pages/catalog/catalog-header.css";
+@import "./pages/catalog/catalog-main.css";
+@import "./pages/catalog/catalog-footer.css";
+@import "./medias.css";
+@import "./pages/contact/contact-header.css";
+@import "./pages/contact/contact-main.css";
+@import "./pages/contact/contact-footer.css";
+
+
+@import "./pages/home/medias.css";
+@import "./pages/detail/detail-header.css";
+@import "./pages/detail/detail-main.css";
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Newsreader:opsz,wght@6..72,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -8,13 +20,16 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --color-primary: #E60C4E;
   --color-secondary: #EDB932;
   --color-accent: #15725F;
-  --color-text-dark: #000000;
-  --color-background: #F9F9F7;
+  --color-black: #000000;
+  --color-background: #ebebe1;
+  --color-white: #FFFFFF;
 
   --font-titles: "Epilogue", serif;
   --font-main: "Manrope", sans-serif;

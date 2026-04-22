@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckstore - Catálogo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-container">
+                <a href="index.html" class="header__logo">
+                    <img class="header__logo-img" src="assets/logo.svg" alt="DuckStore Logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="header__nav-list" id="nav-menu">
+                <li class="nav__item"><a href="./index.html">Inicio</a></li>
+                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog">
+        <div class="catalog__container">
+
+            <aside class="catalog__sidebar">
+                <nav class="categories-catalog">
+                    <ul class="categories__list">
+                        <li class="categories__item">
+                            <a href="#animals" class="categories__link">Animales <span
+                                    class="categories__icon">›</span></a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#professions" class="categories__link">Profesiones <span
+                                    class="categories__icon">›</span></a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#heroes" class="categories__link">Superhéroes <span
+                                    class="categories__icon">›</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="catalog__content">
+                <div class="product-grid">
+
+                    <article id="animals" class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-chew.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-lucky.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/murcielago.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article id="professions" class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-fotografo.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/cirujano.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-rap.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article id="heroes" class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-spider.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-vader.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-container">
+                            <img src="./assets/pato-jocker.png" alt="Pato de goma" class="product-card__img">
+                        </div>
+                        <a class="product-card__button" href="./detail.html"><button>
+                                Ver producto <span class="product-card__arrow">→</span>
+                            </button></a>
+                    </article>
+
+                </div>
+
+                <div class="catalog__footer">
+                    <button class="button-see-more">Ver más</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
+            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

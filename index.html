@@ -1,12 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DuckStore Equipo 3</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-container">
+                <a href="index.html" class="header__logo">
+                    <img class="header__logo-img" src="assets/logo.svg" alt="DuckStore Logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="header__nav-list" id="nav-menu">
+                <li class="nav__item"><a href="./index.html">Inicio</a></li>
+                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__title">
+                    <h1>El "Quack" que le <br> faltaba a tu <br> <span>colección</span> </h1>
+                    <a href="./catalogo.html"><button class="hero__button">Ver Catálogo</button></a>
+                </div>
+                <article class="card__hero">
+                    <div class="card__img-container">
+                        <img class="hero__card-img" src="assets/unicornio.png" alt="Imagen del hero">
+                    </div>
+                </article>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="categories">
+            <h2 class="categories__title">Elige tu categoría favorita</h2>
+            <div class="categories__grid">
+
+                <article class="card">
+                    <div class="card__image-container--orange">
+                        <img src="./assets/cirujano.png" alt="Pato C" class="card__img">
+                    </div>
+                    <a href="./catalogo.html"><button class="card__button">Ver más </button></a>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-container--white">
+                        <img src="./assets/batman.png" alt="Pato Batman" class="card__img">
+                    </div>
+                    <a href="./catalogo.html"><button class="card__button">Ver más </button></a>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-container--blue">
+                        <img src="./assets/murcielago.png" alt="Pato Murciélago" class="card__img">
+                    </div>
+                    <a href="./catalogo.html"><button class="card__button">Ver más </button></a>
+                </article>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner__container">
+                <img src="./assets/hulk-border.png" alt="Pato Hulk" class="banner__img">
+                <div class="banner__text-content">
+                    <h2 class="banner__title">Splish,<br><span>Splash... </span> <br> ¡y mucho estilo!</h2>
+                    <p class="banner__description">Ponle actitud a tu escritorio (y a tu bañera)</p>
+                    <a href="./catalogo.html"><button class="banner__button">Adopta un pato</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__icon-container">
+                    <img src="./assets/email-icon.png" alt="Icono de sobre" class="contact__icon-home">
+                </div>
+                <h2 class="contact__title-home">¿Necesitas ayuda con tu pedido?</h2>
+                <p class="contact__text">Nuestro equipo de atención al cliente está disponible para resolver cualquier
+                    duda</p>
+                <a href="./contact.html"><button class="contact__button-home">Contáctanos</button></a>
+                <p class="contact__disclaimer">Colecciónalos todos. Ningún pato fue ignorado en la creación de esta web
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
+            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
+        </div>
+    </footer>
 </body>
+
 </html>

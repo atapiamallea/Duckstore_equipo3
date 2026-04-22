@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-container">
+                <a href="index.html" class="header__logo">
+                    <img class="header__logo-img" src="assets/logo.svg" alt="DuckStore Logo">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="header__nav-list" id="nav-menu">
+                <li class="nav__item"><a href="./index.html">Inicio</a></li>
+                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="page-contact">
+        <h1 class="contact__title">Encuéntranos <span class="contact__title--accent">aquí</span></h1>
+
+        <section class="contact__card">
+            <div class="contact__wrapper">
+                <div class="contact__info">
+                    <h2 class="contact__subtitle">CONTACTO</h2>
+
+                    <div class="contact__item">
+                        <div class="contact__icon contact__icon--email">
+                            <img src="./assets/icon-email.svg" alt="Email" class="contact__icon-img">
+                        </div>
+                        <div class="contact__text-group">
+                            <span class="contact__label">CORREO ELECTRÓNICO</span>
+                            <a href="mailto:hello@duckstore.curated" class="contact__link">hello@duckstore.team</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__icon contact__icon--location">
+                            <img src="./assets/icon-ubicacion.svg" alt="Ubicación" class="contact__icon-img">
+                        </div>
+                        <div class="contact__text-group">
+                            <span class="contact__label">UBICACIÓN</span>
+                            <address class="contact__address">
+                                Ps. de, Passeig de Llorenç Serra, 64,<br>
+                                08921 Santa Coloma de Gramenet,<br>
+                                Barcelona
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__map-container">
+                    <img src="./assets/map-contact.png" alt="Mapa de ubicación de DuckStore" class="contact__map-img">
+                </div>
+
+            </div>
+
+            <div class="contact__actions">
+                <a href="mailto:hello@duckstore.team"><button class="contact__button">Enviar mensaje</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
+            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
