@@ -5,6 +5,10 @@
 @import "./pages/catalog/catalog-main.css";
 @import "./pages/catalog/catalog-footer.css";
 @import "./medias.css";
+@import "./pages/contact/contact-header.css";
+@import "./pages/contact/contact-main.css";
+@import "./pages/contact/contact-footer.css";
+
 
 
 /* Fonts */
