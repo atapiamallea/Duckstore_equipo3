@@ -131,9 +131,9 @@ a .card__button {
 .contact__icon-home {
     width: 30px;
 }
-.contact__title {
-    font-size: 2rem;
-    font-weight: 600;
+.contact__title-home {
+    font-size: 2.2rem;
+    font-weight: 700;
     line-height: 1.2;
     font-family: var(--font-titles);
   
