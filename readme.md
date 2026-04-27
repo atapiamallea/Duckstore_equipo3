@@ -9,6 +9,12 @@
 - Página de detalle
 - Página de contacto
 
+##Sección de Formulario
+Se ha integrado un formulario de contacto profesional que incluye:
+- **Campos:** Nombre, Email, Asunto y Mensaje.
+- **Validación:** Uso de atributos `required` de HTML5.
+- **Interactividad:** JavaScript captura el evento *submit*, previene la recarga y muestra los datos mediante `console.table()` para una mejor visualización técnica.
+
 
 ## Información General
 Se desarrollará una página web estática para el e-commerce DuckStore

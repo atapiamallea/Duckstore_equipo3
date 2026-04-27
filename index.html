@@ -27,6 +27,7 @@
                 <li class="nav__item"><a href="./index.html">Inicio</a></li>
                 <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
                 <li class="nav__item"><a href="./contact.html">Contacto</a></li>
+                <li class="naav__item"><a href="./formulario.html">Inicio</a></li>
             </ul>
         </nav>
         <section class="hero">
@@ -86,21 +87,38 @@
                     <img src="./assets/email-icon.png" alt="Icono de sobre" class="contact__icon-home">
                 </div>
                 <h2 class="contact__title-home">¿Necesitas ayuda con tu pedido?</h2>
-                <p class="contact__text">Nuestro equipo de atención al cliente está disponible para resolver cualquier
-                    duda</p>
+                <p class="contact__text">Nuestro equipo de atención al cliente está disponible para resolver cualquier duda
+                </p>
                 <a href="./contact.html"><button class="contact__button-home">Contáctanos</button></a>
                 <p class="contact__disclaimer">Colecciónalos todos. Ningún pato fue ignorado en la creación de esta web
                 </p>
             </div>
         </section>
 
+
+
     </main>
 
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
-            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
+            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br>
+            </p>
+
+            <form id="form-contacto">
+                <input type="text" name="usuario_nombre" placeholder="Tu nombre" required>
+                <input type="email" name="usuario_email" placeholder="Tu email" required>
+                <textarea name="usuario_mensaje" placeholder="Escribe tu duda aquí..." required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <script src="js/script.js"></script>
+
+
+
         </div>
+
     </footer>
 </body>
 
