@@ -1,0 +1,19 @@
+{
+  "name": "duckstore-project",
+  "version": "1.0.0",
+  "description": "DuckStore Project",
+  "homepage": "https://github.com/atapiamallea/Duckstore_equipo3#readme",
+  "bugs": {
+    "url": "https://github.com/atapiamallea/Duckstore_equipo3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atapiamallea/Duckstore_equipo3.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
