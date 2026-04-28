@@ -49,9 +49,9 @@
             <div class="product__quantity-text">CANTIDAD</div>
             <div class="action__row">
                 <div class="quantity__selector">
-                    <button>-</button>
-                    <span>2</span>
-                    <button>+</button>
+                    <button onclick="totalClick(-1)">-</button>
+                    <span id="totalClicks">0</span>
+                    <button onclick="totalClick(1)">+</button>
                 </div>
 
                 <button class="shop__button">Añadir al carrito</button>
