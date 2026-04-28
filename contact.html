@@ -1,114 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Contacto - DuckStore</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="header__logo-container">
-                <a href="index.html" class="header__logo">
-                    <img class="header__logo-img" src="assets/logo.svg" alt="DuckStore Logo">
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="header__nav-list" id="nav-menu">
-                <li class="nav__item"><a href="./index.html">Inicio</a></li>
-                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
-                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
-                <li class="nav__item"><a href="./index.html#about">Nosotros</a></li>
-            </ul>
-        </nav>
 
-    </header>
-    <main class="page-contact">
-        <h1 class="contact__title">Encuéntranos <span class="contact__title--accent">aquí</span></h1>
-        <section class="contact-container">
-            <form id="contactForm" class="contact-form">
-                <h2>Déjanos un mensaje</h2>
+    <main class="contact-page">
+        <div class="card-container">
 
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn-submit">Enviar Mensaje</button>
-            </form>
-        </section>
-        <section class="contact__card">
-            <div class="contact__wrapper">
-                <div class="contact__info">
-                    <h2 class="contact__subtitle">CONTACTO</h2>
-
-                    <div class="contact__item">
-                        <div class="contact__icon contact__icon--email">
-                            <img src="./assets/icon-email.svg" alt="Email" class="contact__icon-img">
+            <div class="card-left">
+                <form id="contactForm">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>NOMBRE</label>
+                            <input type="text" id="nombre" placeholder="Florentin Duck" required>
                         </div>
-                        <div class="contact__text-group">
-                            <span class="contact__label">CORREO ELECTRÓNICO</span>
-                            <a href="mailto:hello@duckstore.curated" class="contact__link">hello@duckstore.team</a>
+                        <div class="input-group">
+                            <label>EMAIL</label>
+                            <input type="email" id="email" placeholder="hello@duckstore.com" required>
                         </div>
                     </div>
 
-                    <div class="contact__item">
-                        <div class="contact__icon contact__icon--location">
-                            <img src="./assets/icon-ubicacion.svg" alt="Ubicación" class="contact__icon-img">
-                        </div>
-                        <div class="contact__text-group">
-                            <span class="contact__label">UBICACIÓN</span>
-                            <address class="contact__address">
-                                Ps. de, Passeig de Llorenç Serra, 64,<br>
-                                08921 Santa Coloma de Gramenet,<br>
-                                Barcelona
-                            </address>
-                        </div>
+                    <div class="input-group">
+                        <label>ASUNTO</label>
+                        <input type="text" id="asunto" placeholder="Limited Edition Inquiry">
+                    </div>
+
+                    <div class="input-group">
+                        <label>MENSAJE</label>
+                        <textarea id="mensaje" placeholder="Tell us what's on your mind..."></textarea>
+                    </div>
+
+                    <p class="helper-text">
+                        ¿Tienes preguntas sobre alguna pieza poco común o personalizada? Estaremos siempre listos para resolver tus dudas. ¡Completa el formulario!
+                    </p>
+
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <div class="card-right">
+
+                <script src="./js/script.js"></script>
+                <h2 class="title-small">CONTACTO</h2>
+
+                <div class="info-item">
+                    <div class="icon-circle icon-pink">
+                        <span class="material-symbols-outlined">alternate_email</span>
+                    </div>
+                    <div class="info-data">
+                        <span class="data-label">CORREO ELECTRÓNICO</span>
+                        <span class="data-value">hello@duckstore.team</span>
                     </div>
                 </div>
 
-                <div class="contact__map-container">
-                    <img src="./assets/map-contact.png" alt="Mapa de ubicación de DuckStore" class="contact__map-img">
+                <div class="info-item">
+                    <div class="icon-circle icon-blue">
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <div class="info-data">
+                        <span class="data-label">ARCHIVE HQ</span>
+                        <span class="data-value">
+                            Ps. de, Passeig de Llorenç Serra, 64,<br>
+                            08921 Santa Coloma de Gramenet,<br>
+                            Barcelona
+                        </span>
+                    </div>
                 </div>
 
+                <div class="map-box">
+                    <img src="./assets/map-contact.png" alt="Mapa" class="map-img">
+                </div>
             </div>
 
-            <div class="contact__actions">
-                <a href="mailto:hello@duckstore.team"><button class="contact__button">Enviar mensaje</button></a>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer__container">
-            <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
-            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br>
-            </p>
-        </div>
-    </footer>
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
