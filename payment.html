@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DuckStore - Tu Carrito</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo-container">
+          <a href="index.html" class="header__logo">
+            <img
+              class="header__logo-img"
+              src="assets/logo.svg"
+              alt="DuckStore Logo"
+            />
+          </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="header__nav-list" id="nav-menu">
+          <li class="nav__item"><a href="./index.html">Inicio</a></li>
+          <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
+          <li class="nav__item"><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container main-layout">
+      <header class="page-title">
+        <h1>Tu Carrito</h1>
+        <p>Revisa tus artículos antes de proceder al pago.</p>
+      </header>
+
+      <div class="checkout-grid">
+        <section class="product-list">
+          <article class="cart-card">
+            <button class="remove-btn">&times;</button>
+            <div class="product-img">
+              <img src="./assets/pato-avatar.png" alt="Pato azul Avatar">
+            </div>
+            <div class="product-info">
+              <h3>Patito Avatar</h3>
+              <span class="badge">Edición Limitada</span>
+              <div class="details-row">
+                <div class="price-block">
+                  <label>Precio unitario</label>
+                  <p>€15.00</p>
+                </div>
+                <div class="quantity-selector">
+                  <button>&minus;</button>
+                  <span>2</span>
+                  <button>&plus;</button>
+                </div>
+              </div>
+            </div>
+            <div class="subtotal-block">
+              <label>Subtotal</label>
+              <p class="price-highlight">€30.00</p>
+            </div>
+          </article>
+          <article class="cart-card">
+            <button class="remove-btn">&times;</button>
+            <div class="product-img">
+              <img src="./assets/pato-rap.png" alt="Patito Rap">
+            </div>
+            <div class="product-info">
+              <h3>Patito Rap</h3>
+              <span class="badge">Colección Espacial</span>
+              <div class="details-row">
+                <div class="price-block">
+                  <label>Precio unitario</label>
+                  <p>€12.00</p>
+                </div>
+                <div class="quantity-selector">
+                  <button>&minus;</button>
+                  <span>1</span>
+                  <button>&plus;</button>
+                </div>
+              </div>
+            </div>
+            <div class="subtotal-block">
+              <label>Subtotal</label>
+              <p class="price-highlight">€12.00</p>
+            </div>
+          </article>
+
+          <article class="cart-card">
+            <button class="remove-btn">&times;</button>
+            <div class="product-img">
+              <img src="./assets/pato-besos.png" alt="Patito Besos" />
+            </div>
+            <div class="product-info">
+              <h3>Patito Besos</h3>
+              <span class="badge">Colección Espacial</span>
+              <div class="details-row">
+                <div class="price-block">
+                  <label>Precio unitario</label>
+                  <p>€12.00</p>
+                </div>
+                <div class="quantity-selector">
+                  <button>&minus;</button>
+                  <span>1</span>
+                  <button>&plus;</button>
+                </div>
+              </div>
+            </div>
+            <div class="subtotal-block">
+              <label>Subtotal</label>
+              <p class="price-highlight">€12.00</p>
+            </div>
+          </article>
+        </section>
+
+        <aside class="summary-sidebar">
+          <div class="summary-card">
+            <h2>Resumen del Pedido</h2>
+            <div class="summary-line">
+              <span>Subtotal (3 artículos)</span>
+              <span class="val">€39.00</span>
+            </div>
+            <div class="summary-line">
+              <span>Envío</span>
+              <span class="val highlight-pink">Gratis</span>
+            </div>
+            <div class="summary-line">
+              <span>Impuestos estimados</span>
+              <span class="val">€0.00</span>
+            </div>
+
+            <div class="total-line">
+              <span>Total</span>
+              <span class="total-amount">€39.00</span>
+            </div>
+
+           <button class="checkout-btn" id="myCheckout-Btn">
+              Proceder al Pago <span class="arrow">&rarr;</span>
+            </button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <div class="modal-body-success">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" width="40" height="40">
+          <circle cx="12" cy="12" r="11" fill="#D81B60" />
+          <path d="M7 12l3 3 7-7" stroke="white" stroke-width="2" fill="none" />
+        </svg>
+      </div>
+
+      <h1>¡Gracias por tu compra!</h1>
+      <p>Tu orden <strong>#DS-9824-A</strong> ha sido confirmada y se está preparando.</p>
+      
+      <button class="return-shop-btn" onclick="window.location.href='catalogo.html'">
+        Volver a la tienda
+      </button>
+    </div>
+  </div>
+</div>
+
+            <div class="secure-info">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+              PAGO SEGURO Y ENCRIPTADO
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="./payment-modal.js"></script>
+  </body>
+</html>
