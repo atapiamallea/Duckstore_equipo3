@@ -1,5 +1,5 @@
 import { renderCatalog } from "./catalog-logic.js";
-import { renderDetail } from "./detail-logic.js";
+import { renderDetail, addCountCart } from "./detail-logic.js";
 
 
 function app() {
@@ -13,6 +13,7 @@ function app() {
 
     if (detailContainer) {
         renderDetail();
+        addCountCart();
     }
 }
 
