@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Pato Chew",
+    "category": "animals",
+    "image": "./assets/pato-chew.png",
+    "alt": "Pato de goma Chew",
+    "link": "./detail.html?id=1",
+    "price": 12.99,
+    "description": "Un valiente pato inspirado en el copiloto más famoso de la galaxia. Peludo (en espíritu) y listo para la aventura.",
+    "material": "Vinilo resistente",
+    "design": "Texturizado con detalles que simulan pelaje y bandolera cruzada."
+  },
+  {
+    "id": 2,
+    "name": "Pato Lucky",
+    "category": "animals",
+    "image": "./assets/pato-lucky.png",
+    "alt": "Pato de goma Lucky",
+    "link": "./detail.html?id=2",
+    "price": 9.50,
+    "description": "El patito de la suerte clásico, ideal para acompañar tus baños y traer buenas vibras a tu bañera.",
+    "material": "Caucho natural",
+    "design": "Estilo minimalista en color amarillo vibrante con acabado mate."
+  },
+  {
+    "id": 3,
+    "name": "Pato Murciélago",
+    "category": "animals",
+    "image": "./assets/murcielago.png",
+    "alt": "Pato de goma murciélago",
+    "link": "./detail.html?id=3",
+    "price": 11.00,
+    "description": "Un pato nocturno con alas oscuras. No muerde, pero le encanta vigilar la estantería desde las sombras.",
+    "material": "Vinilo suave",
+    "design": "Cuerpo negro con pequeñas alas laterales y orejas puntiagudas."
+  },
+  {
+    "id": 4,
+    "name": "Pato Fotógrafo",
+    "category": "professions",
+    "image": "./assets/pato-fotografo.png",
+    "alt": "Pato de goma fotógrafo",
+    "link": "./detail.html?id=4",
+    "price": 14.25,
+    "description": "Siempre con su cámara lista para capturar el mejor chapuzón. ¡Digan 'cuac'!",
+    "material": "Vinilo",
+    "design": "Incluye accesorio de cámara colgante y gorra deportiva."
+  },
+  {
+    "id": 5,
+    "name": "Pato Cirujano",
+    "category": "professions",
+    "image": "./assets/cirujano.png",
+    "alt": "Pato de goma cirujano",
+    "link": "./detail.html?id=5",
+    "price": 15.00,
+    "description": "Experto en operaciones de alta precisión en aguas jabonosas. Equipado con su bata y profesionalismo.",
+    "material": "Látex de alta calidad",
+    "design": "Atuendo médico completo de color verde quirúrgico y estetoscopio pintado."
+  },
+  {
+    "id": 6,
+    "name": "Pato Rapero",
+    "category": "professions",
+    "image": "./assets/pato-rap.png",
+    "alt": "Pato de goma rapero",
+    "link": "./detail.html?id=6",
+    "price": 13.50,
+    "description": "El rey del flow en el estanque. Viene con estilo urbano y rimas que flotan sobre cualquier ritmo.",
+    "material": "Vinilo",
+    "design": "Gorra hacia atrás, cadena dorada y gafas de sol oscuras."
+  },
+  {
+    "id": 7,
+    "name": "Pato Spider",
+    "category": "heroes",
+    "image": "./assets/pato-spider.png",
+    "alt": "Pato de goma Spider-Man",
+    "link": "./detail.html?id=7",
+    "price": 16.99,
+    "description": "Un gran poder conlleva una gran flotabilidad. Trepa por los bordes de la tina sin problemas.",
+    "material": "Caucho reforzado",
+    "design": "Patrón de telaraña serigrafiado sobre base roja y azul."
+  },
+  {
+    "id": 8,
+    "name": "Pato Vader",
+    "category": "heroes",
+    "image": "./assets/pato-vader.png",
+    "alt": "Pato de goma Darth Vader",
+    "link": "./detail.html?id=8",
+    "price": 18.00,
+    "description": "Únete al lado oscuro del baño. Su presencia es imponente, aunque siga siendo un patito de hule.",
+    "material": "Vinilo de alta densidad",
+    "design": "Casco icónico moldeado y capa de tela sintética impermeable."
+  },
+  {
+    "id": 9,
+    "name": "Pato Joker",
+    "category": "heroes",
+    "image": "./assets/pato-jocker.png",
+    "alt": "Pato de goma Joker",
+    "link": "./detail.html?id=9",
+    "price": 17.50,
+    "description": "¿Por qué tan serio? Este pato villano pondrá una sonrisa en tu colección de héroes.",
+    "material": "Vinilo",
+    "design": "Pintura facial blanca, pelo verde y traje color púrpura clásico."
+  }
+]
