@@ -14,6 +14,10 @@
 @import "./pages/detail/detail-header.css";
 @import "./pages/detail/detail-main.css";
 
+@import "./pages/payment/payment-header.css";
+@import "./pages/payment/payment-main.css";
+@import "./pages/payment/payment-modal.css";
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Newsreader:opsz,wght@6..72,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Newsreader:opsz,wght@6..72,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
