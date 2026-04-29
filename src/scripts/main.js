@@ -1,6 +1,7 @@
 import { renderCatalog } from "./catalog-logic.js";
-import { renderDetail, addCountCart } from "./detail-logic.js";
+import { renderDetail, addCountCart, totalClick } from "./detail-logic.js";
 
+window.totalClick = totalClick;
 
 function app() {
      // console.log("app loaded")
@@ -14,7 +15,10 @@ function app() {
     if (detailContainer) {
         renderDetail();
         addCountCart();
+        
     }
 }
 
 app();
+
+

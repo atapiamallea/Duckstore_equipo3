@@ -30,7 +30,7 @@
                 <li class="nav__item"><a href="./contact.html">Contacto</a></li>
             </ul>
             <div class="header__cart">
-                <a href="./carrito.html" class="cart-button" aria-label="Ver carrito">
+                <a href="./payment.html" class="cart-button" aria-label="Ver carrito">
                     <img src="assets/shop-cart.svg" alt="Carrito" class="cart-icon-img">
                     <span id="cart-count" class="cart-count"></span>
                 </a>
@@ -55,9 +55,9 @@
             <div class="product__quantity-text">CANTIDAD</div>
             <div class="action__row">
                 <div class="quantity__selector">
-                    <button>-</button>
-                    <span>2</span>
-                    <button>+</button>
+                    <button onclick="totalClick(-1)">-</button>
+                    <span id="totalClicks">0</span>
+                    <button onclick="totalClick(1)">+</button>
                 </div>
 
                 <button class="shop__button">Añadir al carrito</button> -->
