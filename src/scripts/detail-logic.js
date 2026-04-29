@@ -78,3 +78,4 @@ export function totalClick(click) {
     if (sumValue < 0) sumValue = 0;
     totalClicksSpan.innerHTML = sumValue;
 }
+

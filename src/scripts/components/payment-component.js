@@ -23,9 +23,9 @@ export function createCartCard(product) {
                 </div>
                 
                 <div class="quantity-selector">
-                  <button class="btnQuantity" onclick="totalClick(-1) data-action="minus">&minus;</button>
-                  <span class="qty-number">${quantity}</span>
-                  <button class="btnQuantity" onclick="totalClick(1) data-action="plus">&plus;</button>
+                  <button class="btnQuantityPay"  data-action="minus">&minus;</button>
+                  <span id="totalClicksPay"class="qty-number">${quantity}</span>
+                  <button class="btnQuantityPay"  data-action="plus">&plus;</button>
                 </div>
               </div>
             </div>
