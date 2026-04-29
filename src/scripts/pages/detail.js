@@ -1,12 +1,17 @@
 // QUANTITY BUTTON 
 
 function totalClick(click) {
-    const totalClicks = document.getElementById('');
-    const sumvalue = parseInt(totalClicks.innerHTML) + click;
-    totalClicks.innerHTML = sumvalue;
-
-    // Avoid negative numbers
-    if(sumvalue < 0) {
-        totalClicks.innerHTML = 0;
+    // 1. Target the span where the number is shown
+    const totalClicksSpan = document.getElementById('totalClicks');
+    
+    // 2. Get current value and add the click (1 or -1)
+    let sumValue = parseInt(totalClicksSpan.innerHTML) + click;
+    
+    // 3. Avoid negative numbers
+    if (sumValue < 0) {
+        sumValue = 0;
     }
+
+    // 4. Update the text on the screen
+    totalClicksSpan.innerHTML = sumValue;
 }

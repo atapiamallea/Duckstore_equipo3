@@ -1,6 +1,5 @@
 export function createDetailTemplate(product) {
-  const { image, alt, name, description, material, design, price } =
-    product;
+  const { image, alt, name, description, material, design, price } = product;
 
   return `
         
@@ -18,14 +17,16 @@ export function createDetailTemplate(product) {
                 </div>
                 <div class="product__price">${price} €</div>
                 <div class="product__quantity-text">CANTIDAD</div>
+                
                 <div class="action__row">
-                    <div class="quantity__selector">
-                        <button class="btn-qty" id="minus">-</button>
-                        <span id="qty-value">1</span>
-                        <button class="btn-qty" id="plus">+</button>
-                    </div>
-
-                    <button class="shop__button">Añadir al carrito</button>
+                <div class="quantity__selector">
+                <button class="btnQuantity" onclick="totalClick(-1)">-</button>
+                <span id="totalClicks">0</span>
+                <button class="btnQuantity" onclick="totalClick(1)">+</button>
+                </div>
+                
+                <button class="shop__button">Añadir al carrito</button></div>
+                </div>
                 </div>
             </div>
   
