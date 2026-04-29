@@ -18,6 +18,7 @@ export function createDetailTemplate(product) {
                 <div class="product__price">${price} €</div>
                 <div class="product__quantity-text">CANTIDAD</div>
                 
+                
                 <div class="action__row">
                 <div class="quantity__selector">
                 <button class="btnQuantity" onclick="totalClick(-1)">-</button>
