@@ -36,4 +36,30 @@
 .nav__item a:hover {
   color: var(--color-primary);
 }
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 20px;
+}
 
+/* Estilos del carrito */
+.header__cart {
+  order: 2;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.cart-button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cart-icon-img {
+  width: 30px;
+  height: auto;
+  display: block;
+}
