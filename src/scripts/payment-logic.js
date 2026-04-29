@@ -1,5 +1,29 @@
-// MODAL BOX
+// REMOVE BUTTON
+export function initRemoveItems() {
+    const productList = document.querySelector(".product-list");
 
+    if (productList) {
+        productList.addEventListener("click", function(event) {
+            // Check if the clicked element has the 'remove-btn' class
+            if (event.target.classList.contains("remove-btn")) {
+                // Find the closest parent 'article' (the cart card)
+                const cartCard = event.target.closest(".cart-card");
+                
+                if (cartCard) {
+                    // Remove the element from the HTML
+                    cartCard.remove();
+                    
+                    // Optional: Call a function here to update the Total Price
+                    console.log("Item removed from UI");
+                }
+            }
+        });
+    }
+}
+
+
+// MODAL BOX
+export function initModal(){
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -25,3 +49,5 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
+}
+
