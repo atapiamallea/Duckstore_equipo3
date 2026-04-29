@@ -29,3 +29,20 @@
 .nav__item a:hover {
   color: var(--color-primary);
 }
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
