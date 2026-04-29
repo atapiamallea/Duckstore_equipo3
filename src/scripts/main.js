@@ -1,14 +1,14 @@
 import { renderCatalog } from "./catalog-logic.js";
 import { renderDetail, setupAddToCart, totalClick, updateCartBadge } from "./detail-logic.js";
-import { renderCheckout } from "./payment-logic.js";
-// Hacemos que la función del +/- funcione desde el HTML
+import { renderCheckout, activateModal } from "./payment-logic.js";
+
 window.totalClick = totalClick;
 
 function app() {
     const catalogGrid = document.querySelector(".product-grid");
     const detailContainer = document.querySelector(".detail__container");
-    const checkoutContainer = document.querySelector(".product-list");
-    // Siempre actualizamos el numerito al cargar cualquier página
+    const paymentContainer = document.querySelector(".product-list");
+
     updateCartBadge();
 
     if (catalogGrid) {
@@ -16,13 +16,14 @@ function app() {
     }
 
     if (detailContainer) {
-        const currentDuck = renderDetail(); // Guardamos el pato que se está viendo
+        const currentDuck = renderDetail(); 
         if (currentDuck) {
-            setupAddToCart(currentDuck); // Activamos el botón para ese pato
+            setupAddToCart(currentDuck); 
         }
     }
-    if (checkoutContainer) {
-        renderCheckout(); // <--- SE EJECUTA SOLO EN LA PÁGINA DE CHECKOUT
+    if (paymentContainer) {
+        renderCheckout();
+        activateModal(); // 
     }
 }
 

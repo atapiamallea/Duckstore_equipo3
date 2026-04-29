@@ -19,12 +19,14 @@ export function renderDetail() {
   }
 }
 
-// --- FUNCIÓN 2: ACTUALIZAR EL BADGE (El numerito rojo del menú) ---
+// --- ACTUALIZAR EL BADGE ---
 export function updateCartBadge() {
   const contadorVisual = document.getElementById("cart-count");
+  if (!contadorVisual){
+    return;
+  }
   const cart = JSON.parse(localStorage.getItem("duck-cart")) || [];
   
-  // Sumamos las cantidades de todos los productos en el carrito
   const total = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   if (total > 0) {
@@ -35,22 +37,19 @@ export function updateCartBadge() {
   }
 }
 
-// --- FUNCIÓN 3: AGREGAR AL CARRITO (Reemplaza a addCountCart) ---
+// --- AGREGAR AL CARRITO  ---
 export function setupAddToCart(duck) {
   const botonAgregar = document.querySelector(".shop__button");
   const contadorVisual = document.getElementById("cart-count");
 
   if (botonAgregar && duck) {
     botonAgregar.addEventListener("click", () => {
-      // 1. ¿Cuántos patos dice el selector (+/-)?
-      const cantidadElegida = parseInt(document.getElementById("totalClicks").textContent);
 
+      const cantidadElegida = parseInt(document.getElementById("totalClicks").textContent);
       if (cantidadElegida <= 0) return alert("Selecciona al menos un patito 🦆");
 
-      // 2. Traer carrito actual del LocalStorage
+  
       let cart = JSON.parse(localStorage.getItem("duck-cart")) || [];
-
-      // 3. ¿Ya existe este pato en el carrito?
       const index = cart.findIndex(item => item.id === duck.id);
 
       if (index !== -1) {
@@ -59,7 +58,7 @@ export function setupAddToCart(duck) {
         cart.push({ id: duck.id, quantity: cantidadElegida });
       }
 
-      // 4. Guardar de nuevo en LocalStorage
+      // 4. Guardar en LocalStorage
       localStorage.setItem("duck-cart", JSON.stringify(cart));
 
       // 5. Animación y actualización visual
