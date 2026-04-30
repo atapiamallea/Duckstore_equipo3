@@ -9,6 +9,8 @@ export function renderCheckout() {
 
     if (cartItems.length === 0) {
         cartContainer.innerHTML = "<h2>Tu estanque está vacío... 🦆</h2>";
+        calculateTotal([]); 
+        ``
         return;
     }
 
@@ -27,6 +29,7 @@ function calculateTotal(products) {
     const totalElement = document.querySelector(".total-amount"); 
     const subtotalValElement = document.getElementById("summary-subtotal-val");
     const qtyTextElement = document.getElementById("summary-qty-text");
+    const checkoutBtn = document.getElementById("myCheckout-Btn");
 
     if (!totalElement) return;
 
@@ -42,6 +45,12 @@ function calculateTotal(products) {
     totalElement.textContent = formattedPrice; // El total grande
     if (subtotalValElement) subtotalValElement.textContent = formattedPrice; // El subtotal de arriba
     if (qtyTextElement) qtyTextElement.textContent = `Subtotal (${totalQuantity} artículos)`;
+    if (checkoutBtn) {
+    // Si el total es 0, desactivamos el botón y le cambiamos el estilo
+    checkoutBtn.disabled = products.length === 0;
+    checkoutBtn.style.opacity = products.length === 0 ? "0.5" : "1";
+    checkoutBtn.style.cursor = products.length === 0 ? "not-allowed" : "pointer";
+}
 }
 
 // REMOVE BUTTON
@@ -50,17 +59,31 @@ export function initRemoveItems() {
 
     if (productList) {
         productList.addEventListener("click", function(event) {
-            // Check if the clicked element has the 'remove-btn' class
+            // Detectar si el clic fue en el botón de borrar
             if (event.target.classList.contains("remove-btn")) {
-                // Find the closest parent 'article' (the cart card)
                 const cartCard = event.target.closest(".cart-card");
                 
                 if (cartCard) {
-                    // Remove the element from the HTML
-                    cartCard.remove();
+                    // Obtener el ID del producto (lo sacamos del data-id que pusimos en el componente)
+                    const productId = Number(cartCard.dataset.id);
                     
-                    // Optional: Call a function here to update the Total Price
-                    console.log("Item removed from UI");
+                    //  Eliminar del LocalStorage
+                    let cart = JSON.parse(localStorage.getItem("duck-cart")) || [];
+                    // Filtramos el carrito: "quédate con todos menos con el que tiene este ID"
+                    cart = cart.filter(item => item.id !== productId);
+                    
+                    localStorage.setItem("duck-cart", JSON.stringify(cart));
+                    
+                    import("./payment-logic.js").then(module => {
+                        module.renderCheckout(); 
+                        
+                        // Si tienes la función del circulito rojo del header:
+                        if (typeof module.updateCartBadge === "function") {
+                            module.updateCartBadge();
+                        }
+                    });
+
+                    console.log(`Producto ${productId} eliminado de la base de datos y de la vista.`);
                 }
             }
         });
@@ -68,21 +91,8 @@ export function initRemoveItems() {
 }
 
 
-// MODAL BOX
-export function initModal(){
-// Get the modal
-    // var modal = document.getElementById("myModal");
-    // // When the user clicks anywhere outside of the modal, close it
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // } 
-}
-
-
 //-- MODAL BOX---
-export function activateModal() {
+export function initModal() {
     const modal = document.getElementById("myModal");
     const btn = document.getElementById("myCheckout-Btn");
     const span = document.querySelector(".close");

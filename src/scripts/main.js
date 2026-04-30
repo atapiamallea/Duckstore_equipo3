@@ -5,7 +5,7 @@ import {
   totalClick,
   updateCartBadge,
 } from "./detail-logic.js";
-import { renderCheckout, activateModal, updateCountItem, initModal, initRemoveItems } from "./payment-logic.js";
+import { renderCheckout, updateCountItem, initModal, initRemoveItems } from "./payment-logic.js";
 
 window.totalClick = totalClick;
 
@@ -30,7 +30,7 @@ function app() {
     if (paymentContainer) {
         renderCheckout();
         updateCountItem();
-        activateModal();
+        initModal();
         initRemoveItems();
     }
     if (checkoutBtn) {
