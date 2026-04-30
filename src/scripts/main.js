@@ -1,4 +1,4 @@
-import { renderCatalog } from "./catalog-logic.js";
+import { renderCatalog, initFilters } from "./catalog-logic.js";
 import {
   renderDetail,
   setupAddToCart,
@@ -13,18 +13,16 @@ function app() {
     const catalogGrid = document.querySelector(".product-grid");
     const detailContainer = document.querySelector(".detail__container");
     const checkoutBtn = document.getElementById("myCheckout-Btn");
-<<<<<<< HEAD
     const productList = document.querySelector(".product-list");
-=======
     const paymentContainer = document.querySelector(".product-list");
 
     if (catalogGrid) {
         renderCatalog();
+        initFilters();
     }
     if (detailContainer) {
-<<<<<<< HEAD
     renderDetail();
-    addCountCart();
+    updateCountItem();
     }
 
     if (checkoutBtn) {
@@ -33,7 +31,6 @@ function app() {
 
     if (productList) {
         initRemoveItems();
-=======
         const currentDuck = renderDetail(); 
         if (currentDuck) {
             setupAddToCart(currentDuck); 
@@ -47,14 +44,8 @@ function app() {
     }
     if (checkoutBtn) {
         initModal();
->>>>>>> 18db3690abf9951a18be44bd496320f8d0a8181b
+
     }
 }
 
 app();
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 18db3690abf9951a18be44bd496320f8d0a8181b
