@@ -1,9 +1,9 @@
-import { renderCatalog, initFilters } from "./catalog-logic.js";
+import { renderCatalog } from "./catalog-logic.js";
 import {
-  renderDetail,
-  setupAddToCart,
-  totalClick,
-  updateCartBadge,
+    renderDetail,
+    setupAddToCart,
+    totalClick,
+    updateCartBadge,
 } from "./detail-logic.js";
 import { renderCheckout, activateModal, updateCountItem, initModal, initRemoveItems } from "./payment-logic.js";
 
@@ -13,16 +13,21 @@ function app() {
     const catalogGrid = document.querySelector(".product-grid");
     const detailContainer = document.querySelector(".detail__container");
     const checkoutBtn = document.getElementById("myCheckout-Btn");
-    const productList = document.querySelector(".product-list");
     const paymentContainer = document.querySelector(".product-list");
+
+    updateCartBadge();
+
 
     if (catalogGrid) {
         renderCatalog();
         initFilters();
     }
+
     if (detailContainer) {
-    renderDetail();
-    updateCountItem();
+        const currentDuck = renderDetail();
+        if (currentDuck) {
+            setupAddToCart(currentDuck);
+        }
     }
 
     if (checkoutBtn) {
@@ -31,9 +36,9 @@ function app() {
 
     if (productList) {
         initRemoveItems();
-        const currentDuck = renderDetail(); 
+        const currentDuck = renderDetail();
         if (currentDuck) {
-            setupAddToCart(currentDuck); 
+            setupAddToCart(currentDuck);
         }
     }
     if (paymentContainer) {
