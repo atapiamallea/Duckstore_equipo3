@@ -1,9 +1,9 @@
 import { renderCatalog } from "./catalog-logic.js";
 import {
-  renderDetail,
-  setupAddToCart,
-  totalClick,
-  updateCartBadge,
+    renderDetail,
+    setupAddToCart,
+    totalClick,
+    updateCartBadge,
 } from "./detail-logic.js";
 import { renderCheckout, updateCountItem, initModal, initRemoveItems } from "./payment-logic.js";
 
@@ -17,14 +17,28 @@ function app() {
 
     updateCartBadge();
 
+
     if (catalogGrid) {
         renderCatalog();
+        initFilters();
     }
 
     if (detailContainer) {
-        const currentDuck = renderDetail(); 
+        const currentDuck = renderDetail();
         if (currentDuck) {
-            setupAddToCart(currentDuck); 
+            setupAddToCart(currentDuck);
+        }
+    }
+
+    if (checkoutBtn) {
+        initModal();
+    }
+
+    if (productList) {
+        initRemoveItems();
+        const currentDuck = renderDetail();
+        if (currentDuck) {
+            setupAddToCart(currentDuck);
         }
     }
     if (paymentContainer) {
@@ -35,6 +49,7 @@ function app() {
     }
     if (checkoutBtn) {
         initModal();
+
     }
 }
 
