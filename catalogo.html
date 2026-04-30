@@ -16,6 +16,18 @@
                     <img class="header__logo-img" src="assets/logo.svg" alt="DuckStore Logo">
                 </a>
             </div>
+            <ul class="header__nav-list" id="nav-menu">
+                <li class="nav__item"><a href="./index.html">Inicio</a></li>
+                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
+            </ul>
+
+            <div class="header__cart">
+                <a href="./payment.html" class="cart-button" aria-label="Ver carrito">
+                    <img src="assets/shop-cart.svg" alt="Carrito" class="cart-icon-img">
+                    <span id="cart-count" class="cart-count"></span>
+                </a>
+            </div>
 
             <button class="menu-toggle" aria-label="Abrir menú">
                 <span class="bar"></span>
@@ -23,11 +35,7 @@
                 <span class="bar"></span>
             </button>
 
-            <ul class="header__nav-list" id="nav-menu">
-                <li class="nav__item"><a href="./index.html">Inicio</a></li>
-                <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
-                <li class="nav__item"><a href="./contact.html">Contacto</a></li>
-            </ul>
+
         </nav>
     </header>
 
@@ -37,16 +45,21 @@
             <aside class="catalog__sidebar">
                 <nav class="categories-catalog">
                     <ul class="categories__list">
+                        <!-- Use "all" to reset the filter -->
                         <li class="categories__item">
-                            <a href="#animals" class="categories__link">Animales <span
+                            <a href="#" class="categories__link filter-btn" data-category="all">Todos <span
                                     class="categories__icon">›</span></a>
                         </li>
                         <li class="categories__item">
-                            <a href="#professions" class="categories__link">Profesiones <span
+                            <a href="#" class="categories__link filter-btn" data-category="animals">Animales <span
                                     class="categories__icon">›</span></a>
                         </li>
                         <li class="categories__item">
-                            <a href="#heroes" class="categories__link">Superhéroes <span
+                            <a href="#" class="categories__link filter-btn" data-category="professions">Profesiones
+                                <span class="categories__icon">›</span></a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link filter-btn" data-category="heroes">Superhéroes <span
                                     class="categories__icon">›</span></a>
                         </li>
                     </ul>
@@ -56,7 +69,7 @@
             <section class="catalog__content">
                 <div class="product-grid">
 
-                    <article id="animals" class="product-card">
+                    <!-- <article id="animals" class="product-card">
                         <div class="product-card__image-container">
                             <img src="./assets/pato-chew.png" alt="Pato de goma" class="product-card__img">
                         </div>
@@ -136,8 +149,7 @@
                         <a class="product-card__button" href="./detail.html"><button>
                                 Ver producto <span class="product-card__arrow">→</span>
                             </button></a>
-                    </article>
-
+                    </article> -->
                 </div>
 
                 <div class="catalog__footer">
@@ -148,14 +160,13 @@
         </div>
     </main>
 
-
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
             <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
         </div>
     </footer>
-
+    <script src="./src/scripts/main.js" type="module"></script>
 </body>
 
 </html>

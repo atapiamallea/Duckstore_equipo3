@@ -3,14 +3,17 @@
   top: 0;
   left: 0;
 }
+
 .header__nav {
   background-color: var(--color-white);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
+  justify-content: start; 
   margin: 0 auto;
-  gap: 50px;
+  width: 100%; 
 }
+
 .header__logo-container {
     padding-left: 40px;
 }
@@ -28,21 +31,4 @@
 }
 .nav__item a:hover {
   color: var(--color-primary);
-}
-.cart-count {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: var(--color-primary);
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 2px 6px;
-    border-radius: 50%;
-    min-width: 18px;
-    height: 18px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease;
 }

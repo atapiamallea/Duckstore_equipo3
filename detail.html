@@ -29,10 +29,16 @@
                 <li class="nav__item"><a href="./catalogo.html">Catálogo</a></li>
                 <li class="nav__item"><a href="./contact.html">Contacto</a></li>
             </ul>
+            <div class="header__cart">
+                <a href="./payment.html" class="cart-button" aria-label="Ver carrito">
+                    <img src="assets/shop-cart.svg" alt="Carrito" class="cart-icon-img">
+                    <span id="cart-count" class="cart-count"></span>
+                </a>
+            </div>
         </nav>
     </header>
     <article class="detail__container">
-        <div class="detail__img-container">
+        <!-- <div class="detail__img-container">
             <img class="detail__img" src="./assets/sevillana.png" alt="Detalle del producto">
         </div>
 
@@ -49,15 +55,15 @@
             <div class="product__quantity-text">CANTIDAD</div>
             <div class="action__row">
                 <div class="quantity__selector">
-                    <button>-</button>
-                    <span>2</span>
-                    <button>+</button>
+                    <button onclick="totalClick(-1)">-</button>
+                    <span id="totalClicks">0</span>
+                    <button onclick="totalClick(1)">+</button>
                 </div>
 
-                <button class="shop__button">Añadir al carrito</button>
+                <button class="shop__button">Añadir al carrito</button> -->
     </article>
     </section>
-
+    <script src="./src/scripts/main.js" type="module"></script>
 </body>
 
 </html>
