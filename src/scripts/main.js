@@ -1,21 +1,28 @@
 import { renderCatalog } from "./catalog-logic.js";
-import { renderDetail, addCountCart, totalClick } from "./detail-logic.js";
-import { initModal, initRemoveItems } from "./payment-logic.js";
+import {
+  renderDetail,
+  setupAddToCart,
+  totalClick,
+  updateCartBadge,
+} from "./detail-logic.js";
+import { renderCheckout, activateModal, updateCountItem, initModal, initRemoveItems } from "./payment-logic.js";
 
 window.totalClick = totalClick;
 
 function app() {
-     // console.log("app loaded")
     const catalogGrid = document.querySelector(".product-grid");
     const detailContainer = document.querySelector(".detail__container");
     const checkoutBtn = document.getElementById("myCheckout-Btn");
+<<<<<<< HEAD
     const productList = document.querySelector(".product-list");
+=======
+    const paymentContainer = document.querySelector(".product-list");
 
     if (catalogGrid) {
         renderCatalog();
     }
-
     if (detailContainer) {
+<<<<<<< HEAD
     renderDetail();
     addCountCart();
     }
@@ -26,10 +33,28 @@ function app() {
 
     if (productList) {
         initRemoveItems();
+=======
+        const currentDuck = renderDetail(); 
+        if (currentDuck) {
+            setupAddToCart(currentDuck); 
+        }
+    }
+    if (paymentContainer) {
+        renderCheckout();
+        updateCountItem();
+        activateModal();
+        initRemoveItems();
+    }
+    if (checkoutBtn) {
+        initModal();
+>>>>>>> 18db3690abf9951a18be44bd496320f8d0a8181b
     }
 }
 
 app();
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 18db3690abf9951a18be44bd496320f8d0a8181b
