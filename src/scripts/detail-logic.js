@@ -5,6 +5,9 @@ const detailContainer = document.querySelector(".detail__container");
 
 // --- FUNCIÓN 1: RENDERIZAR (Dibuja el pato y nos lo devuelve) ---
 export function renderDetail() {
+  if (!detailContainer) {
+    return
+  }
   const queryParams = new URLSearchParams(window.location.search);
   const idProduct = Number(queryParams.get("id"));
 
