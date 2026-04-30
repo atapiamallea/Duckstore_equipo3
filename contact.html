@@ -27,13 +27,43 @@
                 <li class="nav__item"><a href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
+
     <main class="page-contact">
         <h1 class="contact__title">Encuéntranos <span class="contact__title--accent">aquí</span></h1>
 
         <section class="contact__card">
             <div class="contact__wrapper">
+
+                <section class="form-container">
+                    <form id="duck-contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>NOMBRE</label>
+                                <input type="text" placeholder="Florentin Duck">
+                            </div>
+                            <div class="form-group">
+                                <label>EMAIL</label>
+                                <input type="email" placeholder="hello@duckstore.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>ASUNTO</label>
+                            <input type="text" placeholder="Limited Edition Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label>MENSAJE</label>
+                            <textarea placeholder="Tell us what's on your mind..."></textarea>
+                        </div>
+                        <p class="form-disclaimer">
+                            ¿Tienes preguntas sobre alguna pieza poco común o personalizada? Estaremos siempre listos
+                            para resolver tus dudas. ¡Completa el formulario!
+                        </p>
+                        <button type="submit" class="btn-send">Enviar mensaje</button>
+                    </form>
+                </section>
+
+
                 <div class="contact__info">
                     <h2 class="contact__subtitle">CONTACTO</h2>
 
@@ -60,27 +90,24 @@
                             </address>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact__map-container">
-                    <img src="./assets/map-contact.png" alt="Mapa de ubicación de DuckStore" class="contact__map-img">
+                    <div class="contact__map-container">
+                        <img src="./assets/map-contact.png" alt="Mapa de ubicación de DuckStore"
+                            class="contact__map-img">
+                    </div>
                 </div>
 
             </div>
 
-            <div class="contact__actions">
-                <a href="mailto:hello@duckstore.team"><button class="contact__button">Enviar mensaje</button></a>
-            </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo-img" src="assets/logo.svg" alt="DuckStore Logo" />
-            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </br></p>
+            <p class="footer-text">© 2026 FemCoders Andrea, Nira, Chiara. <br> Made with ❤︎ </p>
         </div>
     </footer>
-
 </body>
 
 </html>
