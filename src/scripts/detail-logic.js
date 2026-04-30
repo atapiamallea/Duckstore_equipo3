@@ -65,8 +65,6 @@ export function setupAddToCart(duck) {
       updateCartBadge();
       contadorVisual.style.transform = "scale(1.3)";
       setTimeout(() => contadorVisual.style.transform = "scale(1)", 100);
-      
-      alert(`¡Agregado! Ahora tienes ${cantidadElegida} más en tu cesta.`);
     });
   }
 }
