@@ -58,10 +58,10 @@ export function setupAddToCart(duck) {
         cart.push({ id: duck.id, quantity: cantidadElegida });
       }
 
-      // 4. Guardar en LocalStorage
+      // Guardar en LocalStorage
       localStorage.setItem("duck-cart", JSON.stringify(cart));
 
-      // 5. Animación y actualización visual
+      // Animación y actualización visual
       updateCartBadge();
       contadorVisual.style.transform = "scale(1.3)";
       setTimeout(() => contadorVisual.style.transform = "scale(1)", 100);
@@ -69,7 +69,7 @@ export function setupAddToCart(duck) {
   }
 }
 
-// --- FUNCIÓN 4: EL SELECTOR (+/-) ---
+// --- FUNCIÓN 4: EL SELECTOR DETAIL (+/-) ---
 export function totalClick(click) {
     const totalClicksSpan = document.getElementById('totalClicks');
     let sumValue = parseInt(totalClicksSpan.innerHTML) + click;
